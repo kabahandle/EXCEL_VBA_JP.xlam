@@ -35,6 +35,14 @@ But to easy use, VBA JP is simple and usefull.
 In addition, not only serving Japanase VBA libraly, but also english libraly, those are just the same coding rule.
 (One only exception, Japanese function library is not supported againt english. but I'm look forward to implement in near future.)
 
+## Official HomePage (But it is tha homepage written in Japanese.)
+
+[The Cunning Programing Worker!](https://cunning-pg.ringing-web.com/)
+
+![screenshot](https://i2.wp.com/cunning-pg.ringing-web.com/wp-content/uploads/2017/11/top_image.jpg?fit=1024%2C682&ssl=1)
+
+![screenshot of Japanese VBA Code](https://cunning-pg.ringing-web.com/wp-content/uploads/2019/06/20190601_exceljp_screenmshot.png)
+
 # Excel VBA Englishization
 
 Same code functionalities taht The Excel VBA Japanization serving functionalities, it serving to Excel VBA Englishization.

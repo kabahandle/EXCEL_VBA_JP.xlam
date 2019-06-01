@@ -41,9 +41,14 @@ In addition, not only serving Japanase VBA libraly, but also english libraly, th
 
 ### Official Hompage's Main Image
 
+It's a bit baddy for the main image, but why somthing, I featured this image.
+
 ![screenshot](https://i2.wp.com/cunning-pg.ringing-web.com/wp-content/uploads/2017/11/top_image.jpg?fit=1024%2C682&ssl=1)
 
-### Official HomePage's one scene og blog
+### Official HomePage's one scene of blog
+
+I'm writing Excel VBA JP's official blog, and introduing basic VBA coding methods, coding rules, coding samples.
+It seems that there are a bit people who get interested in starting programing by access analysising using google analytics.
 
 ![screenshot of Japanese VBA Code](https://cunning-pg.ringing-web.com/wp-content/uploads/2019/06/20190601_exceljp_screenmshot.png)
 

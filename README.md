@@ -39,7 +39,11 @@ In addition, not only serving Japanase VBA libraly, but also english libraly, th
 
 [The Cunning Programing Worker!](https://cunning-pg.ringing-web.com/)
 
+### Official Hompage's Main Image
+
 ![screenshot](https://i2.wp.com/cunning-pg.ringing-web.com/wp-content/uploads/2017/11/top_image.jpg?fit=1024%2C682&ssl=1)
+
+### Official HomePage's one scene og blog
 
 ![screenshot of Japanese VBA Code](https://cunning-pg.ringing-web.com/wp-content/uploads/2019/06/20190601_exceljp_screenmshot.png)
 

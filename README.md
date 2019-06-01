@@ -18,15 +18,14 @@ I simply added classes which has Japanese name such as below
  - class functions
  - class properties
  - class functions return value that is class.
- - ccode completion in also Japanese.
+ - code completion in also Japanese.
 
 But I do not use class inheritance that makes code object oriented progrming.
 Becourse I toucht that Excel VBA JP may serve only functionality libralies functionality.
 
 It's simple. But easily and efficiently for developping code.
 
-Becource It supported half done that is VBA. 
-Then, Object oriented programing by VBA, it's not usefull in the real.
+Becource It supported half done that is VBA class functionality, then, Object oriented programing by VBA, it's not usefull in the real.
 
 ## It's realy VBA?
 

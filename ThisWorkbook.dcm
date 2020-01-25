@@ -1,0 +1,28 @@
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+END
+Attribute VB_Name = "ThisWorkbook"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = True
+'**************
+'open_close標準モジュールへ移行
+'**************
+'Private Sub Workbook_BeforeClose(Cancel As Boolean)
+'    Set g_道具 = Nothing
+'    Set h_変数取得 = Nothing
+'    Set in_入力 = Nothing
+'    Set VBAJP_FSO = Nothing
+'    Set vbajp_MyDoc = Nothing
+'    Set WSH = Nothing
+'End Sub
+'
+'Private Sub Workbook_Open()
+'    Set VBAJP_FSO = CreateObject("Scripting.FileSystemObject")
+'    ReDim vbajp_ary_Files(0)
+'    Set WSH = CreateObject("WScript.Shell")
+'    vbajp_MyDoc = WSH.SpecialFolders("MyDocuments")
+'
+'End Sub

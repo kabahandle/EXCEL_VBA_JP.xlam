@@ -27,6 +27,14 @@ It's simple. But easily and efficiently for developping code.
 
 Becource It supported half done that is VBA class functionality, then, Object oriented programing by VBA, it's not usefull in the real.
 
+## source import method
+
+This project is using vbac (Ariawase), regard below url pages.
+
+[IT works besies me always](https://tonari-it.com/vba-vbac-git/)
+
+[Ariawase is an open source VBA library.](https://github.com/vbaidiot/Ariawase)
+
 ## It's realy VBA?
 
 In the strict real fact, it's not supposed VBA programing rule.

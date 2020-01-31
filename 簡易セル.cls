@@ -44,7 +44,7 @@ Public Property Get JP関数用() As Range
 End Property
 
 Public Property Get F_関数用() As Range
-    Set JP関数用 = m_Range
+    Set F_関数用 = m_Range
 End Property
 
 '--- end of 日本語間枢要

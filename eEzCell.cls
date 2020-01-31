@@ -602,16 +602,16 @@ Public Sub CallSubroutineByCell(SubRoutineName As String, _
                 Optional arg8 As Variant, _
                 Optional arg9 As Variant)
     Dim w_rng As Range
-    Dim w_Cell As New eEzCell
+    Dim w_cell As New eEzCell
     
     For Each w_rng In m_Range
-        Set w_Cell.ToSet = w_rng
-        Application.Run ActiveWorkbook.Name & "!" & SubRoutineName, w_Cell, _
+        Set w_cell.ToSet = w_rng
+        Application.Run ActiveWorkbook.Name & "!" & SubRoutineName, w_cell, _
                         arg1, arg2, arg3, arg4, _
                         arg5, arg6, arg7, arg8, arg9
     Next
     
-    Set w_Cell = Nothing
+    Set w_cell = Nothing
     Set w_rng = Nothing
     
 End Sub
@@ -627,17 +627,17 @@ Public Sub CallSubroutineByCell2(SubRoutineNameWithWorkbookName As String, _
                 Optional arg8 As Variant, _
                 Optional arg9 As Variant)
     Dim w_rng As Range
-    Dim w_Cell As New eEzCell
+    Dim w_cell As New eEzCell
     
 
     For Each w_rng In m_Range
-        Set w_Cell.ToSet = w_rng
-        Application.Run SubRoutineNameWithWorkbookName, w_Cell, _
+        Set w_cell.ToSet = w_rng
+        Application.Run SubRoutineNameWithWorkbookName, w_cell, _
                         arg1, arg2, arg3, arg4, _
                         arg5, arg6, arg7, arg8, arg9
     Next
     
-    Set w_Cell = Nothing
+    Set w_cell = Nothing
     Set w_rng = Nothing
     
 End Sub

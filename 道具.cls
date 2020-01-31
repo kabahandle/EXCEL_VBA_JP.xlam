@@ -203,12 +203,30 @@ Function ワークブック名(Optional 連結文字つける As Boolean = True) As String
     End If
         
 End Function
+Public Function hngハンガリアンセル(Optional ByVal セル名 As String = "A1", Optional ByVal シート順番 As Long = 1) As hngハンガリアンセルv1
 
-
+    Dim wセル As New hngハンガリアンセルv1
+    If シート順番 > 0 Then
+        Set wセル.setセット = Worksheets(シート順番).Range(セル名)
+    Else
+        Set wセル.setセット = ActiveSheet.Range(セル名)
+    End If
+    Set hngハンガリアンセル = wセル
+    Set wセル = Nothing
+End Function
  
 
-
-
+Public Function hngハンガリアンセルv1(Optional ByVal セル名 As String = "A1", Optional ByVal シート順番 As Long = 1) As hngハンガリアンセルv1
+    Dim wセル As New hngハンガリアンセルv1
+    If シート順番 > 0 Then
+        Set wセル.setセット = Worksheets(シート順番).Range(セル名)
+    Else
+        Set wセル.setセット = ActiveSheet.Range(セル名)
+    End If
+    Set hngハンガリアンセルv1 = wセル
+    Set wセル = Nothing
+End Function
+ 
 
 
 

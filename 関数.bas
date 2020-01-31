@@ -1,4 +1,6 @@
 Attribute VB_Name = "関数"
+Option Explicit
+
 Public Function カスタム1(合計範囲 As Variant) As Variant
     カスタム1 = 切り捨て2(合計(合計範囲), 2)
 End Function
@@ -115,9 +117,9 @@ Public Function 正規表現置換(検索対象 As Variant, 置換パターン文字列 As Variant,
     r_RegExp.IgnoreCase = 大文字小文字無視
     r_RegExp.Global = Not 最初の一致時のみ置換
     If (IsObject(検索対象)) Then
-        正規表現置換 = RegEx.Replace(検索対象.Value2, 置換後の文字列)
+        正規表現置換 = r_RegExp.Replace(検索対象.Value2, 置換後の文字列)
     Else
-        正規表現置換 = RegEx.Replace(検索対象, 置換後の文字列)
+        正規表現置換 = r_RegExp.Replace(検索対象, 置換後の文字列)
     End If
 End Function
 

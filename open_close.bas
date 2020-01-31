@@ -1,4 +1,6 @@
 Attribute VB_Name = "open_close"
+Option Explicit
+
 Private Sub Auto_Open()
     Set VBAJP_FSO = CreateObject("Scripting.FileSystemObject")
     ReDim vbajp_ary_Files(1)

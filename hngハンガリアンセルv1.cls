@@ -2,7 +2,7 @@ VERSION 1.0 CLASS
 BEGIN
   MultiUse = -1  'True
 END
-Attribute VB_Name = "ƒZƒ‹"
+Attribute VB_Name = "hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
@@ -49,97 +49,97 @@ End Property
 
 '--- end of “ú–{ŒêŠÔ•—v
 
-Public Property Set ƒZƒbƒg(rng As Range)
+Public Property Set setƒZƒbƒg(rng As Range)
     Set m_Range = rng
 End Property
 
-Public Property Let ƒZƒ‹–¼(strgƒZƒ‹–¼ As String)
+Public Property Let ceruƒZƒ‹–¼(strgƒZƒ‹–¼ As String)
     m_ƒZƒ‹–¼ = strgƒZƒ‹–¼
 End Property
 
-Public Property Get ƒZƒ‹–¼() As String
-    ƒZƒ‹–¼ = m_ƒZƒ‹–¼
+Public Property Get ceruƒZƒ‹–¼() As String
+    ceruƒZƒ‹–¼ = m_ƒZƒ‹–¼
 End Property
 
-Public Property Let ƒV[ƒg‡”Ô(ByVal lngƒV[ƒg‡”Ô As Long)
+Public Property Let shtƒV[ƒg‡”Ô(ByVal lngƒV[ƒg‡”Ô As Long)
     m_ƒV[ƒg‡”Ô = lngƒV[ƒg‡”Ô
 End Property
 
-Public Property Get ƒZƒ‹”ÍˆÍ() As Range
-    Set ƒZƒ‹”ÍˆÍ = m_Range
+Public Property Get ceruƒZƒ‹”ÍˆÍ() As Range
+    Set ceruƒZƒ‹”ÍˆÍ = m_Range
 End Property
 
-Public Function ‘Š‘ÎˆÊ’u(Optional ByVal s As Long = 0, Optional ByVal —ñ As Long = 0) As ƒZƒ‹
-    Dim wƒZƒ‹ As New ƒZƒ‹
-    Set wƒZƒ‹.ƒZƒbƒg = m_Range.Offset(s, —ñ)
-    Set ‘Š‘ÎˆÊ’u = wƒZƒ‹
+Public Function soutai‘Š‘ÎˆÊ’u(Optional ByVal s As Long = 0, Optional ByVal —ñ As Long = 0) As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
+    Dim wƒZƒ‹ As New hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
+    Set wƒZƒ‹.setƒZƒbƒg = m_Range.Offset(s, —ñ)
+    Set soutai‘Š‘ÎˆÊ’u = wƒZƒ‹
     Set wƒZƒ‹ = Nothing
 End Function
 
 
-Public Function ‘I‘ğ() As ƒZƒ‹
-    Dim w_”ÍˆÍ As New ƒZƒ‹
+Public Function sentaku‘I‘ğ() As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
+    Dim w_”ÍˆÍ As New hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
     Dim w_range As Range
     
     m_Range.Select
     
     With Selection
         Set w_range = ActiveSheet.Range(.Cells.Address)
-        Set w_”ÍˆÍ.ƒZƒbƒg = w_range
+        Set w_”ÍˆÍ.setƒZƒbƒg = w_range
     End With
     
-    Set ‘I‘ğ = w_”ÍˆÍ
+    Set sentaku‘I‘ğ = w_”ÍˆÍ
     
     Set w_”ÍˆÍ = Nothing
     Set w_range = Nothing
     
 End Function
 
-Public Sub ‘}“ü(Optional ƒVƒtƒg•ûŒü’l As ƒVƒtƒg•ûŒü = ‰E•ûŒü‚ÉƒVƒtƒg)
+Public Sub sounyu‘}“ü(Optional ƒVƒtƒg•ûŒü’l As ƒVƒtƒg•ûŒü = ‰E•ûŒü‚ÉƒVƒtƒg)
     m_Range.Insert ƒVƒtƒg•ûŒü’l
 End Sub
 
-Public Sub íœ(Optional ƒVƒtƒg•ûŒü’l As ƒVƒtƒg•ûŒü = ¶•ûŒü‚ÉƒVƒtƒg)
+Public Sub sakujyoíœ(Optional ƒVƒtƒg•ûŒü’l As ƒVƒtƒg•ûŒü = ¶•ûŒü‚ÉƒVƒtƒg)
     m_Range.Delete ƒVƒtƒg•ûŒü’l
 End Sub
 
-Public Sub Á‹()
+Public Sub syoukyoÁ‹()
     m_Range.Clear
 End Sub
 
-Public Sub Á‹“à—e‚Ì‚İ()
+Public Sub syoukyoÁ‹“à—e‚Ì‚İ()
     m_Range.ClearContents
 End Sub
 
-Public Sub Á‹‘®‚Ì‚İ()
+Public Sub syoukyoÁ‹‘®‚Ì‚İ()
     m_Range.ClearFormats
 End Sub
 
-Public Sub Á‹ƒRƒƒ“ƒg‚Ì‚İ()
+Public Sub syoukyoÁ‹ƒRƒƒ“ƒg‚Ì‚İ()
     m_Range.ClearComments
 End Sub
 
-Public Sub –„‚ß‚é(–„‚ß‚éƒZƒ‹”ÍˆÍ As ƒZƒ‹, ƒZƒ‹‚Ì–„‚ß•û As –„‚ß•û)
-    m_Range.AutoFill Destination:=–„‚ß‚éƒZƒ‹”ÍˆÍ.ƒZƒ‹”ÍˆÍ, Type:=ƒZƒ‹‚Ì–„‚ß•û
+Public Sub umeru–„‚ß‚é(–„‚ß‚éƒZƒ‹”ÍˆÍ As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1, ƒZƒ‹‚Ì–„‚ß•û As –„‚ß•û)
+    m_Range.AutoFill Destination:=–„‚ß‚éƒZƒ‹”ÍˆÍ.ceruƒZƒ‹”ÍˆÍ, Type:=ƒZƒ‹‚Ì–„‚ß•û
 End Sub
 
-Public Sub Ø‚èæ‚è(Optional ˆÚ“®æ As ƒZƒ‹ = Nothing)
+Public Sub kirityoriØ‚èæ‚è(Optional ˆÚ“®æ As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1 = Nothing)
     If Not ˆÚ“®æ Is Nothing Then
-        m_Range.Cut ˆÚ“®æ.ƒZƒ‹”ÍˆÍ
+        m_Range.Cut ˆÚ“®æ.ceruƒZƒ‹”ÍˆÍ
     Else
         m_Range.Cut
     End If
 End Sub
 
-Public Sub ƒRƒs[(Optional ƒRƒs[æ As ƒZƒ‹ = Nothing)
+Public Sub copyƒRƒs[(Optional ƒRƒs[æ As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1 = Nothing)
     If Not ƒRƒs[æ Is Nothing Then
-        m_Range.Copy ƒRƒs[æ.ƒZƒ‹”ÍˆÍ
+        m_Range.Copy ƒRƒs[æ.ceruƒZƒ‹”ÍˆÍ
     Else
         m_Range.Copy
     End If
 End Sub
 
-Public Sub Œ`®‚ğ‚µ‚Äw’è‚µ‚Ä“\‚è•t‚¯(Optional “\‚è•t‚¯•û–@’l As “\‚è•t‚¯•û–@ = ‚·‚×‚Ä“\‚è•t‚¯, Optional ByVal s—ñ‚ğ•ÏX‚µ‚Ä“\‚è•t‚¯ As Boolean = False)
+Public Sub haritsukeŒ`®‚ğ‚µ‚Äw’è‚µ‚Ä“\‚è•t‚¯(Optional “\‚è•t‚¯•û–@’l As “\‚è•t‚¯•û–@ = ‚·‚×‚Ä“\‚è•t‚¯, Optional ByVal s—ñ‚ğ•ÏX‚µ‚Ä“\‚è•t‚¯ As Boolean = False)
 #If DebugMode = False Then
     On Error Resume Next
 #End If
@@ -147,16 +147,16 @@ Public Sub Œ`®‚ğ‚µ‚Äw’è‚µ‚Ä“\‚è•t‚¯(Optional “\‚è•t‚¯•û–@’l As “\‚è•t‚¯•û–@ = 
     On Error GoTo 0
 End Sub
 
-Public Sub “\‚è•t‚¯()
+Public Sub haritsuke“\‚è•t‚¯()
     m_Range.Select
     ActiveSheet.Paste
 End Sub
 
-Public Sub Œ‹‡()
+Public Sub ketsugoŒ‹‡()
     m_Range.Merge
 End Sub
 
-Public Function I’[(Optional •ûŒü As I’[•ûŒü = I’[•ûŒü.‰º’[) As ƒZƒ‹
+Public Function syutanI’[(Optional •ûŒü As I’[•ûŒü = I’[•ûŒü.‰º’[) As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
     Select Case •ûŒü
     Case I’[•ûŒü.ã‹´
         Set m_Range = m_Range.End(xlUp)
@@ -170,10 +170,10 @@ Public Function I’[(Optional •ûŒü As I’[•ûŒü = I’[•ûŒü.‰º’[) As ƒZƒ‹
         Set m_Range = m_Range.End(xlDown)
     End Select
     
-    Set I’[ = Me
+    Set syutanI’[ = Me
 End Function
 
-Public Function “Á’èƒZƒ‹’Šo(Optional ‘I‘ğ•û–@ As ƒZƒ‹‘I‘ğ•û–@ = ƒZƒ‹‘I‘ğ•û–@.‹ó‚ÌƒZƒ‹, Optional ‘I‘ğğŒ’l As ƒZƒ‹‘I‘ğğŒ’l = ƒZƒ‹‘I‘ğğŒ’l.•¶š) As ƒZƒ‹
+Public Function ceru“Á’èƒZƒ‹’Šo(Optional ‘I‘ğ•û–@ As ƒZƒ‹‘I‘ğ•û–@ = ƒZƒ‹‘I‘ğ•û–@.‹ó‚ÌƒZƒ‹, Optional ‘I‘ğğŒ’l As ƒZƒ‹‘I‘ğğŒ’l = ƒZƒ‹‘I‘ğğŒ’l.•¶š) As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
     On Error GoTo ERR1
     
     Select Case ‘I‘ğ•û–@
@@ -185,99 +185,99 @@ Public Function “Á’èƒZƒ‹’Šo(Optional ‘I‘ğ•û–@ As ƒZƒ‹‘I‘ğ•û–@ = ƒZƒ‹‘I‘ğ•û–@.‹ó
         Set m_Range = m_Range.SpecialCells(‘I‘ğ•û–@)
     End Select
     
-    Set “Á’èƒZƒ‹’Šo = Me
+    Set ceru“Á’èƒZƒ‹’Šo = Me
     
     Exit Function
     
 ERR1:
-    Set “Á’èƒZƒ‹’Šo = Me
+    Set ceru“Á’èƒZƒ‹’Šo = Me
 End Function
 
 
 
 '---- Value2
-Public Property Get ’l() As Variant
-    ’l = m_Range.Value2
+Public Property Get atai’l() As Variant
+    atai’l = m_Range.Value2
 End Property
 
 '---- Value2
-Public Property Get ƒAƒhƒŒƒX(Optional —ñ‚ğâ‘Îw’è As â‘Î‚©‘Š‘Î‚©ƒAƒhƒŒƒXw’è = ‘Š‘ÎƒAƒhƒŒƒX, Optional s‚ğâ‘Îw’è As â‘Î‚©‘Š‘Î‚©ƒAƒhƒŒƒXw’è = ‘Š‘ÎƒAƒhƒŒƒX) As Variant
-    ƒAƒhƒŒƒX = m_Range.Address(—ñ‚ğâ‘Îw’è, s‚ğâ‘Îw’è)
+Public Property Get addressƒAƒhƒŒƒX(Optional —ñ‚ğâ‘Îw’è As â‘Î‚©‘Š‘Î‚©ƒAƒhƒŒƒXw’è = ‘Š‘ÎƒAƒhƒŒƒX, Optional s‚ğâ‘Îw’è As â‘Î‚©‘Š‘Î‚©ƒAƒhƒŒƒXw’è = ‘Š‘ÎƒAƒhƒŒƒX) As Variant
+    addressƒAƒhƒŒƒX = m_Range.Address(—ñ‚ğâ‘Îw’è, s‚ğâ‘Îw’è)
 End Property
 
-Public Property Let ’l(’lƒf[ƒ^ As Variant)
+Public Property Let atai’l(’lƒf[ƒ^ As Variant)
     m_Range.Value2 = ’lƒf[ƒ^
 End Property
 
 '---- Formula
-Public Property Get ”®() As Variant
-    ”® = m_Range.Formula
+Public Property Get sushiki”®() As Variant
+    sushiki”® = m_Range.Formula
 End Property
 
-Public Property Let ”®(”®’l As Variant)
+Public Property Let sushiki”®(”®’l As Variant)
     m_Range.Formula = ”®’l
 End Property
 
 ''---- Rows
-'Public Property Get s‘S‘Ì(s”Ô† As Variant) As ƒZƒ‹
+'Public Property Get s‘S‘Ì(s”Ô† As Variant) As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
 '    Set m_Range = m_Range.Rows(s”Ô†)
 '    Set s‘S‘Ì = Me
 'End Property
 '
 ''---- Cols
-'Public Property Get —ñ‘S‘Ì(—ñ”Ô† As Variant) As ƒZƒ‹
+'Public Property Get —ñ‘S‘Ì(—ñ”Ô† As Variant) As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
 '    Set m_Range = m_Range.Columns(—ñ”Ô†)
 '    Set —ñ‘S‘Ì = Me
 'End Property
 
 
 '---- Interior
-Public Property Get ‘®() As ‘®
+Public Property Get syoshiki‘®() As ‘®
     Dim w‘® As New ‘®
     Set w‘®.ƒZƒbƒg = m_Range.Interior
-    Set ‘® = w‘®
+    Set syoshiki‘® = w‘®
     Set w‘® = Nothing
 End Property
 
 '---- Count
-Public Property Get ŒÂ”() As Long
-    ŒÂ” = m_Range.Count
+Public Property Get kosuŒÂ”() As Long
+    kosuŒÂ” = m_Range.Count
 End Property
 
 '---- EntireRow
-Public Property Get s‘S‘Ì() As ƒZƒ‹
-    Dim wƒZƒ‹ As New ƒZƒ‹
-    Set wƒZƒ‹.ƒZƒbƒg = m_Range.EntireRow
-    Set s‘S‘Ì = wƒZƒ‹
+Public Property Get gyous‘S‘Ì() As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
+    Dim wƒZƒ‹ As New hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
+    Set wƒZƒ‹.setƒZƒbƒg = m_Range.EntireRow
+    Set gyous‘S‘Ì = wƒZƒ‹
     Set wƒZƒ‹ = Nothing
 End Property
 
 '---- EntireCols
-Public Property Get —ñ‘S‘Ì() As ƒZƒ‹
-    Dim wƒZƒ‹ As New ƒZƒ‹
-    Set wƒZƒ‹.ƒZƒbƒg = m_Range.EntireColumn
-    Set —ñ‘S‘Ì = wƒZƒ‹
+Public Property Get retsu—ñ‘S‘Ì() As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
+    Dim wƒZƒ‹ As New hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
+    Set wƒZƒ‹.setƒZƒbƒg = m_Range.EntireColumn
+    Set retsu—ñ‘S‘Ì = wƒZƒ‹
     Set wƒZƒ‹ = Nothing
 End Property
 
 '---- Name
-Public Property Get –¼‘O() As String
-    –¼‘O = m_Range.Name
+Public Property Get name–¼‘O() As String
+    name–¼‘O = m_Range.Name
 End Property
 
-Public Property Let –¼‘O(–¼‘O’l As String)
+Public Property Let name–¼‘O(–¼‘O’l As String)
     m_Range.Name = –¼‘O’l
 End Property
 
-Public Property Let ƒRƒƒ“ƒg(ƒRƒƒ“ƒg As String)
+Public Property Let komentoƒRƒƒ“ƒg(ƒRƒƒ“ƒg As String)
     If TypeName(m_Range.Comment) = "Comment" Then
         m_Range.ClearComments
     End If
     m_Range.AddComment ƒRƒƒ“ƒg
 End Property
 
-Public Property Get ƒRƒƒ“ƒg() As String
-    ƒRƒƒ“ƒg = m_Range.Comment
+Public Property Get komentoƒRƒƒ“ƒg() As String
+    komentoƒRƒƒ“ƒg = m_Range.Comment
 End Property
 
 ' ƒZƒ‹‚ğ”ñ•\¦‚É‚·‚é‚ÆƒGƒ‰[
@@ -285,8 +285,8 @@ End Property
 '    m_Range.Hidden = ”ñ•\¦
 'End Property
 
-Public Property Get ‚‚³() As Variant
-    ‚‚³ = m_Range.Height
+Public Property Get takasa‚‚³() As Variant
+    takasa‚‚³ = m_Range.Height
 End Property
 
 'ƒZƒ‹‚Ì‚‚³‚Æ•‚Í•ÏX‚·‚é‚±‚Æ‚ª‚Å‚«‚È‚¢Bis‚‚³E—ñ•‚Ì•ÏX‚Å‘ã—p‚·‚é‚±‚Æj
@@ -294,8 +294,8 @@ End Property
 '    m_Range.Offset(0, 0).Height = ‚‚³’l
 'End Property
 
-Public Property Get •() As Variant
-    • = m_Range.Width
+Public Property Get haba•() As Variant
+    haba• = m_Range.Width
 End Property
 
 'ƒZƒ‹‚Ì‚‚³‚Æ•‚Í•ÏX‚·‚é‚±‚Æ‚ª‚Å‚«‚È‚¢Bis‚‚³E—ñ•‚Ì•ÏX‚Å‘ã—p‚·‚é‚±‚Æj
@@ -305,11 +305,11 @@ End Property
 
 
 '--- NumberFormatLocal
-Public Property Get •\¦Œ`®() As Variant
-    •\¦Œ`® = m_Range.NumberFormatLocal
+Public Property Get hyouji•\¦Œ`®() As Variant
+    hyouji•\¦Œ`® = m_Range.NumberFormatLocal
 End Property
 
-Public Property Let •\¦Œ`®(ByVal •\¦Œ`®’l As Variant)
+Public Property Let hyouji•\¦Œ`®(ByVal •\¦Œ`®’l As Variant)
     m_Range.NumberFormatLocal = •\¦Œ`®’l
 End Property
 
@@ -318,7 +318,7 @@ End Property
 '    •\¦Œ`® = m_Range.NumberFormatLocal
 'End Property
 
-Public Property Let •\¦Œ`®ƒpƒ^[ƒ“(ByVal •\¦Œ`®ƒpƒ^[ƒ“’l As •\¦Œ`®ƒpƒ^[ƒ“’è”)
+Public Property Let hyoji•\¦Œ`®ƒpƒ^[ƒ“(ByVal •\¦Œ`®ƒpƒ^[ƒ“’l As •\¦Œ`®ƒpƒ^[ƒ“’è”)
     Select Case •\¦Œ`®ƒpƒ^[ƒ“’l
     Case ’Ê‰İ
         m_Range.NumberFormatLocal = "\#,##0;[Ô]\#,##0"
@@ -348,31 +348,31 @@ Public Property Let •\¦Œ`®ƒpƒ^[ƒ“(ByVal •\¦Œ`®ƒpƒ^[ƒ“’l As •\¦Œ`®ƒpƒ^[ƒ
 End Property
 
 '--- HorizentalAlignment
-Public Property Get ‰¡ˆÊ’u() As ƒZƒ‹‰¡ˆÊ’u
-    ‰¡ˆÊ’u = m_Range.HorizontalAlignment
+Public Property Get yoko‰¡ˆÊ’u() As ƒZƒ‹‰¡ˆÊ’u
+    yoko‰¡ˆÊ’u = m_Range.HorizontalAlignment
 End Property
 '
-Public Property Let ‰¡ˆÊ’u(ByVal ‰¡ˆÊ’u’l As ƒZƒ‹‰¡ˆÊ’u)
+Public Property Let yoko‰¡ˆÊ’u(ByVal ‰¡ˆÊ’u’l As ƒZƒ‹‰¡ˆÊ’u)
     m_Range.HorizontalAlignment = ‰¡ˆÊ’u’l
 End Property
 
 
 '--- VertucalAlignment
-Public Property Get cˆÊ’u() As ƒZƒ‹cˆÊ’u
-    cˆÊ’u = m_Range.VerticalAlignment
+Public Property Get tatecˆÊ’u() As ƒZƒ‹cˆÊ’u
+    tatecˆÊ’u = m_Range.VerticalAlignment
 End Property
 '
-Public Property Let cˆÊ’u(ByVal cˆÊ’u’l As ƒZƒ‹cˆÊ’u)
+Public Property Let tatecˆÊ’u(ByVal cˆÊ’u’l As ƒZƒ‹cˆÊ’u)
     m_Range.VerticalAlignment = cˆÊ’u’l
 End Property
 
 
 '--- Orientation
-Public Property Get Šp“x() As Long
-    Šp“x = m_Range.Orientation
+Public Property Get kakuŠp“x() As Long
+    kakuŠp“x = m_Range.Orientation
 End Property
 '
-Public Property Let Šp“x(ByVal Šp“x’l As Long)
+Public Property Let kakuŠp“x(ByVal Šp“x’l As Long)
     If Šp“x’l > 90 Then
         Šp“x’l = 90
     ElseIf Šp“x’l < -90 Then
@@ -385,32 +385,32 @@ End Property
 '    Šp“xƒpƒ^[ƒ“ = m_Range.Orientation
 'End Property
 '
-Public Property Let Šp“xƒpƒ^[ƒ“(ByVal Šp“x’l As ƒZƒ‹Šp“x)
+Public Property Let kakuŠp“xƒpƒ^[ƒ“(ByVal Šp“x’l As ƒZƒ‹Šp“x)
     m_Range.Orientation = Šp“x’l
 End Property
 
 
 '---- Interior
-Public Property Get ƒtƒHƒ“ƒg() As ƒtƒHƒ“ƒg
+Public Property Get fontoƒtƒHƒ“ƒg() As ƒtƒHƒ“ƒg
     Dim w_ƒtƒHƒ“ƒg As New ƒtƒHƒ“ƒg
     Set w_ƒtƒHƒ“ƒg.ƒZƒbƒg = m_Range.Font
-    Set ƒtƒHƒ“ƒg = w_ƒtƒHƒ“ƒg
+    Set fontoƒtƒHƒ“ƒg = w_ƒtƒHƒ“ƒg
     Set w_ƒtƒHƒ“ƒg = Nothing
 End Property
-Public Property Set ƒtƒHƒ“ƒg(ƒtƒHƒ“ƒg As ƒtƒHƒ“ƒg)
+Public Property Set fontoƒtƒHƒ“ƒg(ƒtƒHƒ“ƒg As ƒtƒHƒ“ƒg)
     Set m_Range.Font = ƒtƒHƒ“ƒg.ToVBA
 End Property
 
 
 '---- borders
-Public Property Get Œrü(Optional ŒrüˆÊ’u’l As ŒrüˆÊ’u = ¶’[‚ÌŒrü) As Œrü
+Public Property Get keisenŒrü(Optional ŒrüˆÊ’u’l As ŒrüˆÊ’u = ¶’[‚ÌŒrü) As Œrü
     Dim w_Œrü As New Œrü
     Set w_Œrü.ƒZƒbƒg = m_Range.Borders(ŒrüˆÊ’u’l)
-    Set Œrü = w_Œrü
+    Set keisenŒrü = w_Œrü
     Set w_Œrü = Nothing
 End Property
 
-Public Sub ŒrüˆÍ‚İ(üí’l As Œrüüí, Œrü‚Ì‘¾‚³’l As Œrü‚Ì‘¾‚³, FƒCƒ“ƒfƒbƒNƒX’l As ƒJƒ‰[ƒCƒ“ƒfƒbƒNƒXƒpƒ^[ƒ“)
+Public Sub keisenŒrüˆÍ‚İ(üí’l As Œrüüí, Œrü‚Ì‘¾‚³’l As Œrü‚Ì‘¾‚³, FƒCƒ“ƒfƒbƒNƒX’l As ƒJƒ‰[ƒCƒ“ƒfƒbƒNƒXƒpƒ^[ƒ“)
     Call m_Range.BorderAround(üí’l, Œrü‚Ì‘¾‚³’l, FƒCƒ“ƒfƒbƒNƒX’l)
 End Sub
 
@@ -420,36 +420,36 @@ End Sub
 
 
 '---- Photonic
-Public Property Get ‚Ó‚è‚ª‚È() As String
-    ‚Ó‚è‚ª‚È = Application.GetPhonetic(m_Range.Offset(0, 0).Value2)
+Public Property Get hurikana‚Ó‚è‚ª‚È() As String
+    hurikana‚Ó‚è‚ª‚È = Application.GetPhonetic(m_Range.Offset(0, 0).Value2)
 End Property
 
-Public Sub ‚Ó‚è‚ª‚È•\¦()
+Public Sub hurikana‚Ó‚è‚ª‚È•\¦()
     m_Range.SetPhonetic
     m_Range.Phonetics.Visible = True
 End Sub
 
-Public Property Get ‹ó”’() As Boolean
-    ‹ó”’ = (Trim(m_Range.Offset(0, 0)).Value2 = "")
+Public Property Get kuhaku‹ó”’() As Boolean
+    kuhaku‹ó”’ = (Trim(m_Range.Offset(0, 0)).Value2 = "")
 End Property
 
-Public Property Get ‹ó”’‚Å‚È‚¢() As Boolean
-    ‹ó”’‚Å‚È‚¢ = Trim(m_Range.Offset(0, 0).Value2) <> ""
+Public Property Get kuhaku‹ó”’‚Å‚È‚¢() As Boolean
+    kuhaku‹ó”’‚Å‚È‚¢ = Trim(m_Range.Offset(0, 0).Value2) <> ""
 End Property
 
-Public Function •”•ªˆê’v(•”•ªˆê’v•¶š—ñ As •¶š—ñ) As Boolean
-    •”•ªˆê’v = (InStr(1, Trim(m_Range.Offset(0, 0).Value2), •”•ªˆê’v•¶š—ñ.VBA‚É“n‚·) > 0)
+Public Function bubun•”•ªˆê’v(•”•ªˆê’v•¶š—ñ As •¶š—ñ) As Boolean
+    bubun•”•ªˆê’v = (InStr(1, Trim(m_Range.Offset(0, 0).Value2), •”•ªˆê’v•¶š—ñ.VBA‚É“n‚·) > 0)
 End Function
 
-Public Function •”•ªˆê’v‚Å‚È‚¢(•”•ªˆê’v•¶š—ñ As •¶š—ñ) As Boolean
-    •”•ªˆê’v‚Å‚È‚¢ = (InStr(1, Trim(m_Range.Offset(0, 0).Value2), •”•ªˆê’v•¶š—ñ.VBA‚É“n‚·) <= 0)
+Public Function bubun•”•ªˆê’v‚Å‚È‚¢(•”•ªˆê’v•¶š—ñ As •¶š—ñ) As Boolean
+    bubun•”•ªˆê’v‚Å‚È‚¢ = (InStr(1, Trim(m_Range.Offset(0, 0).Value2), •”•ªˆê’v•¶š—ñ.VBA‚É“n‚·) <= 0)
 End Function
 
-Public Function •”•ªˆê’vString(•”•ªˆê’v•¶š—ñ As String) As Boolean
-    •”•ªˆê’vString = (InStr(1, Trim(m_Range.Offset(0, 0).Value2), •”•ªˆê’v•¶š—ñ) > 0)
+Public Function bubun•”•ªˆê’vString(•”•ªˆê’v•¶š—ñ As String) As Boolean
+    bubun•”•ªˆê’vString = (InStr(1, Trim(m_Range.Offset(0, 0).Value2), •”•ªˆê’v•¶š—ñ) > 0)
 End Function
 
-Public Property Get ®”() As ®”
+Public Property Get seisu®”() As ®”
     Dim ret As Long
     Dim w_®” As New ®”
     
@@ -463,11 +463,11 @@ ERR”’l001:
     
     w_®”.Name = ret
     
-    Set ®” = w_®”
+    Set seisu®” = w_®”
     Set w_®” = Nothing
 End Property
 
-Public Property Get ®”Long() As Long
+Public Property Get seisu®”Long() As Long
     Dim ret As Long
     On Error GoTo ERR”’l002
     
@@ -477,11 +477,11 @@ Public Property Get ®”Long() As Long
 ERR”’l002:
     On Error GoTo 0
     
-    ®”Long = ret
+    seisu®”Long = ret
     
 End Property
 
-Public Property Get ’Ê‰İ() As ’Ê‰İ
+Public Property Get tsuka’Ê‰İ() As ’Ê‰İ
     Dim ret As Currency
     Dim w_’Ê‰İ As New ’Ê‰İ
     
@@ -495,11 +495,11 @@ ERR’Ê‰İ001:
     
     w_’Ê‰İ = ret
     
-    Set ’Ê‰İ = w_’Ê‰İ
+    Set tsuka’Ê‰İ = w_’Ê‰İ
     Set w_’Ê‰İ = Nothing
 End Property
 
-Public Property Get ’Ê‰İCurr() As Currency
+Public Property Get tsuka’Ê‰İCurr() As Currency
     Dim ret As Currency
     On Error GoTo ERR’Ê‰İ002
     
@@ -509,12 +509,12 @@ Public Property Get ’Ê‰İCurr() As Currency
 ERR’Ê‰İ002:
     On Error GoTo 0
     
-    ’Ê‰İCurr = ret
+    tsuka’Ê‰İCurr = ret
 End Property
 
-Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è = ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è.‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è‚È‚µ, Optional ƒXƒeƒbƒv” As Long = -1, Optional ys–Ú As Long = -1, Optional x—ñ–Ú As Long = -1, Optional ƒIƒtƒZƒbƒgy As Long = 0, Optional ƒIƒtƒZƒbƒgx As Long = 0) As ƒZƒ‹
+Public Property Get sentaku‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è = ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è.‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è‚È‚µ, Optional ƒXƒeƒbƒv” As Long = -1, Optional ys–Ú As Long = -1, Optional x—ñ–Ú As Long = -1, Optional ƒIƒtƒZƒbƒgy As Long = 0, Optional ƒIƒtƒZƒbƒgx As Long = 0) As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
     Dim w_range As Range
-    Dim w_”ÍˆÍ As New ƒZƒ‹
+    Dim w_”ÍˆÍ As New hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
     Dim startCol As Long
     Dim endCol As Long
     Dim startRow As Long
@@ -547,8 +547,8 @@ Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è =
         Next
         
             
-        Set w_”ÍˆÍ.ƒZƒbƒg = w_range
-        Set ‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
+        Set w_”ÍˆÍ.setƒZƒbƒg = w_range
+        Set sentaku‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
     
     ElseIf ”ÍˆÍƒpƒ^[ƒ“w’è = ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è.‘I‘ğ”ÍˆÍƒpƒ^[ƒ“Šï”s Then
         Selection.Offset(1, 0).Select
@@ -562,8 +562,8 @@ Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è =
         Next
         
             
-        Set w_”ÍˆÍ.ƒZƒbƒg = w_range
-        Set ‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
+        Set w_”ÍˆÍ.setƒZƒbƒg = w_range
+        Set sentaku‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
     
     ElseIf ”ÍˆÍƒpƒ^[ƒ“w’è = ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è.‘I‘ğ”ÍˆÍƒpƒ^[ƒ“sƒXƒeƒbƒv And ƒXƒeƒbƒv” >= 1 Then
         Selection.Offset(0, 0).Select
@@ -577,8 +577,8 @@ Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è =
         Next
         
             
-        Set w_”ÍˆÍ.ƒZƒbƒg = w_range
-        Set ‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
+        Set w_”ÍˆÍ.setƒZƒbƒg = w_range
+        Set sentaku‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
     
     ElseIf ”ÍˆÍƒpƒ^[ƒ“w’è = ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è.‘I‘ğ”ÍˆÍƒpƒ^[ƒ“‹ô”—ñ Then
         Selection.Offset(0, 0).Select
@@ -592,8 +592,8 @@ Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è =
         Next
         
             
-        Set w_”ÍˆÍ.ƒZƒbƒg = w_range
-        Set ‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
+        Set w_”ÍˆÍ.setƒZƒbƒg = w_range
+        Set sentaku‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
     
     ElseIf ”ÍˆÍƒpƒ^[ƒ“w’è = ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è.‘I‘ğ”ÍˆÍƒpƒ^[ƒ“Šï”—ñ Then
         Selection.Offset(0, 1).Select
@@ -607,8 +607,8 @@ Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è =
         Next
         
             
-        Set w_”ÍˆÍ.ƒZƒbƒg = w_range
-        Set ‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
+        Set w_”ÍˆÍ.setƒZƒbƒg = w_range
+        Set sentaku‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
     
     ElseIf ”ÍˆÍƒpƒ^[ƒ“w’è = ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è.‘I‘ğ”ÍˆÍƒpƒ^[ƒ“—ñƒXƒeƒbƒv And ƒXƒeƒbƒv” >= 1 Then
         Selection.Offset(0, 0).Select
@@ -622,8 +622,8 @@ Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è =
         Next
         
             
-        Set w_”ÍˆÍ.ƒZƒbƒg = w_range
-        Set ‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
+        Set w_”ÍˆÍ.setƒZƒbƒg = w_range
+        Set sentaku‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
     
     Else
         
@@ -642,9 +642,9 @@ Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è =
         
         With Selection
             Set w_range = ActiveSheet.Range(.Cells.Address)
-            Set w_”ÍˆÍ.ƒZƒbƒg = w_range
+            Set w_”ÍˆÍ.setƒZƒbƒg = w_range
         End With
-        Set ‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
+        Set sentaku‘I‘ğ”ÍˆÍ = w_”ÍˆÍ
     
     End If
     
@@ -656,7 +656,7 @@ Public Property Get ‘I‘ğ”ÍˆÍ(Optional ”ÍˆÍƒpƒ^[ƒ“w’è As ‘I‘ğ”ÍˆÍƒpƒ^[ƒ“w’è =
 End Property
 
 
-Public Sub ƒZƒ‹‚²‚Æ‚ÉƒTƒuƒ‹[ƒ`ƒ“ŒÄ‚Ño‚µ(ƒTƒuƒ‹[ƒ`ƒ“–¼ As String, _
+Public Sub burokkuƒZƒ‹‚²‚Æ‚ÉƒTƒuƒ‹[ƒ`ƒ“ŒÄ‚Ño‚µ(ƒTƒuƒ‹[ƒ`ƒ“–¼ As String, _
                 Optional ˆø”1 As Variant, _
                 Optional ˆø”2 As Variant, _
                 Optional ˆø”3 As Variant, _
@@ -667,10 +667,10 @@ Public Sub ƒZƒ‹‚²‚Æ‚ÉƒTƒuƒ‹[ƒ`ƒ“ŒÄ‚Ño‚µ(ƒTƒuƒ‹[ƒ`ƒ“–¼ As String, _
                 Optional ˆø”8 As Variant, _
                 Optional ˆø”9 As Variant)
     Dim w_rng As Range
-    Dim w_ƒZƒ‹ As New ƒZƒ‹
+    Dim w_ƒZƒ‹ As New hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
     
     For Each w_rng In m_Range
-        Set w_ƒZƒ‹.ƒZƒbƒg = w_rng
+        Set w_ƒZƒ‹.setƒZƒbƒg = w_rng
         Application.Run ActiveWorkbook.Name & "!" & ƒTƒuƒ‹[ƒ`ƒ“–¼, w_ƒZƒ‹, ˆø”1, ˆø”2, ˆø”3, ˆø”4, ˆø”5, ˆø”6, ˆø”7, ˆø”8, ˆø”9
     Next
     
@@ -679,7 +679,7 @@ Public Sub ƒZƒ‹‚²‚Æ‚ÉƒTƒuƒ‹[ƒ`ƒ“ŒÄ‚Ño‚µ(ƒTƒuƒ‹[ƒ`ƒ“–¼ As String, _
     
 End Sub
 
-Public Sub ƒZƒ‹‚²‚Æ‚ÉƒTƒuƒ‹[ƒ`ƒ“ŒÄ‚Ño‚µ2(ƒ[ƒNƒuƒbƒN–¼•t‚«ƒTƒuƒ‹[ƒ`ƒ“–¼ As String, _
+Public Sub burokkuƒZƒ‹‚²‚Æ‚ÉƒTƒuƒ‹[ƒ`ƒ“ŒÄ‚Ño‚µ2(ƒ[ƒNƒuƒbƒN–¼•t‚«ƒTƒuƒ‹[ƒ`ƒ“–¼ As String, _
                 Optional ˆø”1 As Variant, _
                 Optional ˆø”2 As Variant, _
                 Optional ˆø”3 As Variant, _
@@ -690,10 +690,10 @@ Public Sub ƒZƒ‹‚²‚Æ‚ÉƒTƒuƒ‹[ƒ`ƒ“ŒÄ‚Ño‚µ2(ƒ[ƒNƒuƒbƒN–¼•t‚«ƒTƒuƒ‹[ƒ`ƒ“–¼ As S
                 Optional ˆø”8 As Variant, _
                 Optional ˆø”9 As Variant)
     Dim w_rng As Range
-    Dim w_ƒZƒ‹ As New ƒZƒ‹
+    Dim w_ƒZƒ‹ As New hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
     
     For Each w_rng In m_Range
-        Set w_ƒZƒ‹.ƒZƒbƒg = w_rng
+        Set w_ƒZƒ‹.setƒZƒbƒg = w_rng
         Application.Run ƒ[ƒNƒuƒbƒN–¼•t‚«ƒTƒuƒ‹[ƒ`ƒ“–¼, w_ƒZƒ‹, ˆø”1, ˆø”2, ˆø”3, ˆø”4, ˆø”5, ˆø”6, ˆø”7, ˆø”8, ˆø”9
     Next
     
@@ -703,44 +703,53 @@ Public Sub ƒZƒ‹‚²‚Æ‚ÉƒTƒuƒ‹[ƒ`ƒ“ŒÄ‚Ño‚µ2(ƒ[ƒNƒuƒbƒN–¼•t‚«ƒTƒuƒ‹[ƒ`ƒ“–¼ As S
 End Sub
 
 
-Public Function ƒIƒtƒZƒbƒg‘I‘ğ(Optional ƒIƒtƒZƒbƒgy As Long = 0, Optional ƒIƒtƒZƒbƒgx As Long = 0) As ƒZƒ‹
+Public Function offsetƒIƒtƒZƒbƒg‘I‘ğ(Optional ƒIƒtƒZƒbƒgy As Long = 0, Optional ƒIƒtƒZƒbƒgx As Long = 0) As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1
     'm_Range.Offset(ƒIƒtƒZƒbƒgy, ƒIƒtƒZƒbƒgx).Select
     
     Set m_Range = Range(m_Range.Cells, m_Range.Cells.Offset(ƒIƒtƒZƒbƒgy, ƒIƒtƒZƒbƒgx))
     m_Range.Select
     
-    Set ƒIƒtƒZƒbƒg‘I‘ğ = Me
+    Set offsetƒIƒtƒZƒbƒg‘I‘ğ = Me
 End Function
 
 
-Public Function ŠÈˆÕƒZƒ‹‚Ö() As ŠÈˆÕƒZƒ‹
+Public Function kanniŠÈˆÕƒZƒ‹‚Ö() As ŠÈˆÕƒZƒ‹
     Dim wŠÈˆÕƒZƒ‹ As New ŠÈˆÕƒZƒ‹
     Set wŠÈˆÕƒZƒ‹.ƒZƒbƒg = m_Range
-    Set ŠÈˆÕƒZƒ‹‚Ö = wŠÈˆÕƒZƒ‹
+    Set kanniŠÈˆÕƒZƒ‹‚Ö = wŠÈˆÕƒZƒ‹
     Set wŠÈˆÕƒZƒ‹ = Nothing
 End Function
 
-Public Sub W‡Ï(w_ƒZƒ‹ As ƒZƒ‹)
+Public Function seruƒZƒ‹‚Ö() As ƒZƒ‹
+    Dim wƒZƒ‹ As New ƒZƒ‹
+    Set wƒZƒ‹.ƒZƒbƒg = m_Range
+    Set seruƒZƒ‹‚Ö = wƒZƒ‹
+    Set wƒZƒ‹ = Nothing
+End Function
+
+Public Sub syugoW‡Ï(w_ƒZƒ‹ As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1)
     Dim w_range As Range
     Set w_range = rangeW‡Ï(m_Range, w_ƒZƒ‹.F_ŠÖ”—p)
     Set m_Range = w_range
     Set w_range = Nothing
 End Sub
 
-Public Sub W‡˜a(w_ƒZƒ‹ As ƒZƒ‹)
+Public Sub syugoW‡˜a(w_ƒZƒ‹ As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1)
     Dim w_range As Range
     Set w_range = rangeW‡˜a(m_Range, w_ƒZƒ‹.F_ŠÖ”—p)
     Set m_Range = w_range
     Set w_range = Nothing
 End Sub
 
-Public Sub W‡·(w_ƒZƒ‹ As ƒZƒ‹)
+Public Sub syugoW‡·(w_ƒZƒ‹ As hngƒnƒ“ƒKƒŠƒAƒ“ƒZƒ‹v1)
     Dim w_range As Range
     Set w_range = rangeW‡·(m_Range, w_ƒZƒ‹.F_ŠÖ”—p)
     Set m_Range = w_range
     Set w_range = Nothing
 End Sub
 
-Public Sub W‡”½“]()
+Public Sub syugoW‡”½“]()
     Set m_Range = rangeW‡”½“](m_Range)
 End Sub
+
+

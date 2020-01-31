@@ -1,4 +1,6 @@
 Attribute VB_Name = "VBAJP"
+Option Explicit
+
 Public g_“¹‹ï As New “¹‹ï
 Public eg_eTool As New eTool
 Public k_ŠÈˆÕ“¹‹ï As New ŠÈˆÕ“¹‹ï

@@ -1,4 +1,6 @@
 Attribute VB_Name = "F_関数"
+Option Explicit
+
 Public Function F_カスタム1(合計範囲 As Variant) As Variant
     F_カスタム1 = F_切り捨て2(F_合計(合計範囲), 2)
 End Function
@@ -111,13 +113,13 @@ End Function
 
 '正規表現の置換パターン文字列を指定して、正規表現置換します。
 Public Function F_正規表現置換(検索対象 As Variant, 置換パターン文字列 As Variant, 置換後の文字列 As Variant, Optional 大文字小文字無視 As Boolean = False, Optional 最初の一致時のみ置換 As Boolean = False)
-    RegEx.Pattern = 置換パターン文字列
-    RegEx.IgnoreCase = 大文字小文字無視
-    RegEx.Global = Not 最初の一致時のみ置換
+    r_RegExp.Pattern = 置換パターン文字列
+    r_RegExp.IgnoreCase = 大文字小文字無視
+    r_RegExp.Global = Not 最初の一致時のみ置換
     If (IsObject(検索対象)) Then
-        F_正規表現置換 = RegEx.Replace(検索対象.Value2, 置換後の文字列)
+        F_正規表現置換 = r_RegExp.Replace(検索対象.Value2, 置換後の文字列)
     Else
-        F_正規表現置換 = RegEx.Replace(検索対象, 置換後の文字列)
+        F_正規表現置換 = r_RegExp.Replace(検索対象, 置換後の文字列)
     End If
 End Function
 

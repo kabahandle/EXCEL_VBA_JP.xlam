@@ -681,16 +681,16 @@ Public Sub CallSubroutineByCell(SubRoutineName As String, _
                 Optional arg8 As Variant, _
                 Optional arg9 As Variant)
     Dim w_rng As Range
-    Dim w_Cell As New eCell
+    Dim w_cell As New eCell
     
     For Each w_rng In m_Range
-        Set w_Cell.ToSet = w_rng
-        Application.Run ActiveWorkbook.Name & "!" & SubRoutineName, w_Cell, _
+        Set w_cell.ToSet = w_rng
+        Application.Run ActiveWorkbook.Name & "!" & SubRoutineName, w_cell, _
                         arg1, arg2, arg3, arg4, _
                         arg5, arg6, arg7, arg8, arg9
     Next
     
-    Set w_Cell = Nothing
+    Set w_cell = Nothing
     Set w_rng = Nothing
     
 End Sub
@@ -706,17 +706,17 @@ Public Sub CallSubroutineByCell2(SubRoutineNameWithWorkbookName As String, _
                 Optional arg8 As Variant, _
                 Optional arg9 As Variant)
     Dim w_rng As Range
-    Dim w_Cell As New eCell
+    Dim w_cell As New eCell
     
 
     For Each w_rng In m_Range
-        Set w_Cell.ToSet = w_rng
-        Application.Run SubRoutineNameWithWorkbookName, w_Cell, _
+        Set w_cell.ToSet = w_rng
+        Application.Run SubRoutineNameWithWorkbookName, w_cell, _
                         arg1, arg2, arg3, arg4, _
                         arg5, arg6, arg7, arg8, arg9
     Next
     
-    Set w_Cell = Nothing
+    Set w_cell = Nothing
     Set w_rng = Nothing
     
 End Sub
@@ -739,3 +739,23 @@ Public Function ToEEzCell() As eEzCell
     Set w_eEzCell = Nothing
 End Function
 
+Public Sub eIntersect(w_cell As eCell)
+    Dim w_range As Range
+    Set w_range = rangeèWçáêœ(m_Range, w_cell.ToFFunc)
+    Set m_Range = w_range
+    Set w_range = Nothing
+End Sub
+
+Public Sub eUnion(w_cell As eCell)
+    Dim w_range As Range
+    Set w_range = rangeèWçáòa(m_Range, w_cell.ToFFunc)
+    Set m_Range = w_range
+    Set w_range = Nothing
+End Sub
+
+Public Sub eExcept(w_cell As eCell)
+    Dim w_range As Range
+    Set w_range = rangeèWçáç∑(m_Range, w_cell.ToFFunc)
+    Set m_Range = w_range
+    Set w_range = Nothing
+End Sub

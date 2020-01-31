@@ -29,6 +29,8 @@ Becource It supported half done that is VBA class functionality, then, Object or
 
 ## source import method
 
+To bulk import the VBA sources, you chould vba tools such as vbac or else.
+
 This project is using vbac (Ariawase), regard below url pages.
 
 [IT works besides me always](https://tonari-it.com/vba-vbac-git/)

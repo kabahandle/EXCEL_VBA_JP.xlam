@@ -31,7 +31,7 @@ Becource It supported half done that is VBA class functionality, then, Object or
 
 This project is using vbac (Ariawase), regard below url pages.
 
-[IT works besies me always](https://tonari-it.com/vba-vbac-git/)
+[IT works besides me always](https://tonari-it.com/vba-vbac-git/)
 
 [Ariawase is an open source VBA library.](https://github.com/vbaidiot/Ariawase)
 

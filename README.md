@@ -1,4 +1,4 @@
-# EXCEL_VBA_JP.xlam - Excel VBA Japanization.
+# EXCEL_VBA_JP.xlam - Excel VBA Japanese localization.
 
 ## The Project of Excel VBA Japanization aimmings.
 
@@ -62,10 +62,10 @@ It seems that there are a bit people who get interested in starting programing b
 
 ![screenshot of Japanese VBA Code](https://cunning-pg.ringing-web.com/wp-content/uploads/2019/06/20190601_exceljp_screenmshot.png)
 
-# Excel VBA Englishization
+# Excel VBA Englishish re-localization
 
-Same code functionalities taht The Excel VBA Japanization serving functionalities, it serving to Excel VBA Englishization.
-Same method, objects, classes sobroutines served by Excel VBA Japananization, to Not Same languages together in distingwithed language at the same time.
+Same code functionalities taht The Excel VBA Japanese localization serving functionalities, it serving to Excel VBA English re-localization.
+Same method, objects, classes sobroutines served by Excel VBA Japananese localization, to Not Same languages together in distingwithed language at the same time.
 
-Then, Excel VBA Japanization is the bilingual.
+Then, Excel VBA Japanese localization is the bilingual.
 
